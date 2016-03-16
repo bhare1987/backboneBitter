@@ -1,0 +1,13 @@
+* {
+  box-sizing: border-box;
+}
+
+.hide {
+  display: none !important;
+}
+
+i.fa {
+  &:hover {
+    cursor: pointer;
+  }
+}

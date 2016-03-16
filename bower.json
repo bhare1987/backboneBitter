@@ -1,0 +1,21 @@
+{
+  "name": "backbonebitter",
+  "description": "",
+  "main": "index.js",
+  "authors": [
+    "bhare1987 <brandonlhare@gmail.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://github.com/bhare1987/backboneBitter",
+  "moduleType": [],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "font-awesome": "fontawesome#^4.5.0"
+  }
+}
