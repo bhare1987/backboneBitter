@@ -35,13 +35,14 @@ module.exports = Backbone.View.extend({
   delete: function(){
     this.model.destroy();
   },
+  detail: function(){},
   initialize: function(){
 
   },
   render: function(){
     var markup = this.template(this.model.toJSON());
     console.log(markup);
-    this.$el.html(markup);
+    this.$el.append(markup);
     console.log(this.$el);
     return this;
   },

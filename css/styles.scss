@@ -7,7 +7,49 @@
 }
 
 i.fa {
+  padding: 5px;
   &:hover {
     cursor: pointer;
+    background-color: lightgray;
+    border-radius: 3px;
   }
+}
+
+i.fa-plus-circle {
+  float: right;
+}
+
+.addForm, .editForm {
+  margin-top: 20px;
+}
+
+textarea {
+  resize: none;
+}
+
+.content {
+  position: relative;
+  section {
+    position: absolute;
+    right: 10px;
+    top: 0;
+    i.fa-pencil-square-o {
+      color: green;
+      margin-right: 10px;
+    }
+    i.fa-trash-o {
+      color: red;
+    }
+  }
+  p {
+    margin-top: 10px;
+  }
+}
+
+.col-sm-12 {
+  margin-bottom: 20px;
+}
+
+.container {
+  margin-bottom: 20px;
 }
