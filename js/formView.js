@@ -8,7 +8,7 @@ var BitterModel = require('./bitterModel');
 module.exports = Backbone.View.extend({
   model: null,
   collection: null,
-  el: '.addForm',
+  el: '.addFormContainer',
   template: _.template(templates.addForm),
   events: {
     'click .fa-plus-circle': 'showAdd',
@@ -24,8 +24,12 @@ module.exports = Backbone.View.extend({
       img: this.$el.find('input[name="img"]').val(),
       date: moment().format('MMMM Do YYYY, h:mm:ss a'),
     });
+    this.$el.find('input').val('');
+    this.$el.find('textarea').val('');
+    $('.addForm').addClass('hide');
     this.model.save();
     this.collection.add(this.model);
+    this.model = new BitterModel({});
   },
   initialize: function(){
     this.model = new BitterModel({});
