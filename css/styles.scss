@@ -1,5 +1,17 @@
 * {
   box-sizing: border-box;
+  color: white;
+}
+
+h1 {
+  margin: 0;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+body {
+  background-image: url('http://www.placecage.com/c/300/300');
+  background-size: cover;
 }
 
 .hide {
@@ -21,15 +33,21 @@ i.fa-plus-circle {
 
 .addForm, .editForm {
   margin-top: 20px;
+  border-bottom: 1px solid transparent !important;
 }
 
 textarea {
   resize: none;
 }
 
+.imgContainer {
+  img {
+    width: 100%;
+  }
+}
+
 .content {
   position: relative;
-  border-bottom: 1px solid black;
   section {
     position: absolute;
     right: 10px;
@@ -49,8 +67,17 @@ textarea {
 
 .col-sm-12 {
   margin-bottom: 20px;
+  margin-top: 20px;
+  border-bottom: 1px solid black;
 }
 
 .container {
   margin-bottom: 20px;
+  margin-top: 20px;
+  background-color: rgba(0,0,0,.8);
+  border-radius: 3px;
+}
+
+.addFormContainer {
+  padding: 10px;
 }

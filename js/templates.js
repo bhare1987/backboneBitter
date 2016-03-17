@@ -2,10 +2,10 @@ module.exports = {
   bitter: [
     '<div class="col-sm-12">',
       '<div class="row">',
-        '<div class="col-sm-4 imgContainer">',
+        '<div class="col-sm-3 imgContainer">',
           '<img src="<%=img%>">',
         '</div>',
-        '<div class="col-sm-8 content">',
+        '<div class="col-sm-9 content">',
           '<span><%=date%></span>',
           '<p><%=content%></p>',
           '<section>',
@@ -13,7 +13,7 @@ module.exports = {
             '<i class="fa fa-trash-o"></i>',
           '</section>',
         '</div>',
-        '<form class="editForm col-sm-12">',
+        '<form class="col-sm-12 editForm">',
         '</form>',
       '</div>',
     '</div>'
